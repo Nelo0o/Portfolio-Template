@@ -11,6 +11,10 @@ footer {
 
     @media screen and (max-width: map-get($breakpoints, "md")) {
         margin-bottom: pxToRem(40);
+
+        h2 {
+          font-size: pxToRem(40);
+        }
     }
   }
 
