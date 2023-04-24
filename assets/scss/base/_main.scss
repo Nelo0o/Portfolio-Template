@@ -19,8 +19,9 @@ button {
 
 a {
   text-decoration: none;
+  color: $primary;
 
-  &:visited {
+  &:is:visited {
     color: $primary;
   }
 }
