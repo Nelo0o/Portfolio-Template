@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: $highlight;
+  color: $primary;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: $primary;
+  }
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: $background;
+}
+
+.wrapper {
+  padding-right: $wrapper;
+  padding-left: $wrapper;
+}
+
+.social {
+  display: flex;
+  gap: 30px;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+
+  a:hover:nth-child(n) {
+    background-color: $highlight;
+    padding: 5px;
+  }
+}

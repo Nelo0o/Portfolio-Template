@@ -1,0 +1,43 @@
+// Colors
+
+$primary: hsla(0, 0, 100, 1);
+$background: hsla(0, 0, 8, 1);
+$background-hov: hsla(0, 0, 8, 0.5);
+$footer-bg: hsla(0, 0, 14, 1);
+$paragraph: hsla(0, 0, 70, 1);
+$highlight: hsla(210, 50, 60, 1);
+
+// Typography
+
+$fonts: (
+  Valorant: unquote("'VALORANT', arial, sans-sérif"),
+  Russo-One: unquote("'Russo One', arial, sans-sérif"),
+  Signika: unquote("'Signika', arial, sans-sérif"),
+);
+
+$font-size: (
+  h1: pxToRem(64),
+  h2: pxToRem(48),
+  h3: pxToRem(40),
+  h4: pxToRem(24),
+  p: pxToRem(20),
+  p-projform: pxToRem(16),
+  btn: pxToRem(20),
+);
+
+// Spacing
+
+$wrapper: 20px;
+
+// Grid params
+
+$container: 1280px;
+$grid-columns: 12;
+$grid-gap: 20px;
+
+// Breakpoints
+
+$breakpoints: (
+  md: 768px,
+  lg: 1280px,
+);

@@ -1,0 +1,39 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  padding-top: pxToRem(44);
+  padding-bottom: pxToRem(30);
+
+  @media screen and (max-width: map-get($breakpoints, "md")) {
+    position: relative;
+  }
+
+  &__nametag {
+    font-family: map-get($fonts, "Valorant");
+    color: $primary;
+    width: fit-content;
+    display: flex;
+
+    @media screen and (max-width: map-get($breakpoints, "md")) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &__social {
+    grid-column: 12 / span 1;
+    grid-row: 1;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @media screen and (max-width: map-get($breakpoints, "md")) {
+      justify-content: center;
+      margin-top: $wrapper;
+    }
+  }
+}
