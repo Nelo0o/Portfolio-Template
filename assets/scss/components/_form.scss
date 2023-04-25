@@ -1,50 +1,43 @@
 .form-container {
-    grid-column: 7 / span 6;
-    width: 100%;
+  grid-column: 7 / span 6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  form {
+    font-family: map-get($fonts, "Signika");
+    color: $primary;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 
-    form {
-      font-family: map-get($fonts, "Signika");
+    input,
+    textarea {
+      width: 100%;
+      height: auto;
+      padding: 10px 10px 10px 0;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      font-size: pxToRem(20);
       color: $primary;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+      background-color: transparent;
+      transition: all 0.3s ease;
 
-      input,
-      textarea {
-        width: 100%;
-        height: auto;
-        padding: 10px 10px 10px 0;
-        border: none;
-        border-bottom: 2px solid #ccc;
-        font-size: pxToRem(20);
-        color: $primary;
-        background-color: transparent;
-        transition: all 0.3s ease;
-
-        &::placeholder {
-          font-size: map-get($font-size, "p-projform");
-          color: $paragraph;
-          text-transform: uppercase;
-        }
-
-        &:focus {
-          outline: none;
-          border-bottom: 2px solid $primary;
-
-          &::placeholder {
-            position: relative;
-
-            transform: translateY(-20px);
-            transition: all 0.3s ease;
-          }
-        }
+      &::placeholder {
+        font-size: map-get($font-size, "p-projform");
+        color: $paragraph;
+        text-transform: uppercase;
       }
 
-      button {
-        margin-top: 20px;
-        align-self: flex-end;
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid $primary;
       }
     }
+
+    button {
+      margin-top: 20px;
+      align-self: flex-end;
+    }
   }
+}
