@@ -11,6 +11,10 @@
     flex-direction: column;
     gap: 10px;
 
+    label {
+      display: none;
+    }
+
     input,
     textarea {
       width: 100%;
